@@ -1,0 +1,137 @@
+/* Start Variables */
+:root {
+  --background-color: hsl(0, 0%, 95%);
+  --card-radius: 2%;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+.wrapper {
+  padding: 3em 4em 1.5em;
+}
+.body-background {
+  background-color: var(--background-color);
+  padding: 5em;
+}
+/* End Global Rules */
+/* Start Our Template */
+.heading {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin: 1.5em 0;
+  font-size: 30px;
+}
+.txt {
+  margin-bottom: 3em;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.btn {
+  padding: 15px 30px;
+  background-color: var(--background-color);
+  text-transform: capitalize;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin: 30px 0;
+  font-weight: bold;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+/* End Our Template */
+/* Start sedans section */
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  color: var(--background-color);
+  border-top-left-radius: var(--card-radius);
+}
+.sedans .btn {
+  color: hsl(31, 77%, 52%);
+}
+/* End sedans section */
+/* Start suvs section */
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  color: var(--background-color);
+}
+.suvs .btn {
+  color: hsl(184, 100%, 22%);
+}
+/* end suvs section */
+/* Start laxury section */
+.laxury {
+  background-color: hsl(179, 100%, 13%);
+  color: var(--background-color);
+  border-bottom-right-radius: var(--card-radius);
+}
+.laxury .btn {
+  color: hsl(179, 100%, 13%);
+}
+/* End laxury section */
+/* Start Button Hover Style */
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
+  cursor: pointer;
+}
+/* End Button Hover Style */
+/* Start attribution section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* End attribution section */
+/* Start Media */
+/* mobile */
+@media (min-width: 375px) and (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .sedans {
+    border-top-right-radius: var(--card-radius);
+  }
+  .laxury {
+    background-color: hsl(179, 100%, 13%);
+    color: var(--background-color);
+    border-bottom-left-radius: var(--card-radius);
+  }
+}
+/* desktop */
+@media (min-width: 769px) and (max-width: 1440px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .sedans {
+    border-bottom-left-radius: var(--card-radius);
+  }
+  .laxury {
+    border-top-right-radius: var(--card-radius);
+  }
+}
+/* End Media */
